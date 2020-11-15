@@ -1,0 +1,53 @@
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+	
+	.main-nav,
+	.main-header,
+	.row{
+		display: flex;
+	}
+
+	.main-header{
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.col{
+		/*set each col to have the same size*/
+		flex:1 50%;
+	}
+
+	.row{
+		/*make flex items brake to new line if no space is avaliable*/
+		flex-wrap: wrap;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header{
+		flex-direction: row;
+		/*create space between flex items pushing both to each side*/
+		justify-content: space-between;
+	}
+
+	.col{
+		/*display 3 columns at the same line*/
+		flex-basis: 0;
+	}
+
+	.primary
+	{
+		order:1;
+		flex-grow: 2;
+	}
+
+	.tertiary
+	{
+		order:3;
+	}
+}

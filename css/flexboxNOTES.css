@@ -1,0 +1,57 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+  /*set flex container and set child elements as flex items*/
+  display: flex;
+  flex-direction: line;
+  /*flex-wrap avoids the container from collapsing and allows the creation of multiple lines for example*/
+  /*flex-wrap works only on flex containers*/
+  flex-wrap: wrap;
+  /*set flex items at the end of the container(right side)*/
+  justify-content: space-around;
+  
+}
+
+.item-1{
+  margin-right: auto;
+}
+
+.item-6{
+  /*default order value of all flex items is 0 --- "less is first"*/
+  order:-1;
+}
+
+.item{
+  /*make flex item occupie certain space*/
+  /*default value of flex-grow is 0*/
+  flex-grow: 1;
+}
+
+
+/* ================================= 
+  Flexbox Notes 2
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 25em;
+}
+
+.item{
+	/*
+	flex-grow: 1;
+	/*set min size to flex items -- flex container will distribute flex items auto 
+	flex-basis: 200px;*/
+	flex:1 200px;
+
+	
+}
+
+.item-1{
+	/*dont use flex, use flex-grow to be specific with each item size*/
+	flex-grow: 1;
+	align-self:flex-start;
+}
