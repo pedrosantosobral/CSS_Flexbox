@@ -37,6 +37,7 @@
 
 	.col{
 		/*display 3 columns at the same line*/
+		/*we can set a min value adding here ex 300px*/
 		flex-basis: 0;
 	}
 
